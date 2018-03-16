@@ -26,5 +26,4 @@ pub trait WaveNode {
     fn shutdown(self);
 
     
-
 }
