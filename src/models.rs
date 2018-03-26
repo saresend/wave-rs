@@ -1,15 +1,16 @@
-use traits::WaveNode;
+use uuid::Uuid;
+use cpal;
 
 pub struct Node {
-    id: i32,
+    id: Uuid,
 }
 
-impl WaveNode for Node {
-
-    type Node;
-
-    fn new() -> Node {
-        Node { id: 10 }
+impl Node {
+    pub fn new() -> Node {
+        Node { id: Uuid::new_v4() }
     }
 
+    pub fn initialize() {
+        let device = cpal::default_output_device().expect("Could not find device");
+    }
 }

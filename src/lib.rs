@@ -1,7 +1,7 @@
-
+extern crate cpal;
+extern crate uuid;
 
 mod models;
-mod traits;
 
 #[cfg(test)]
 mod tests {
