@@ -1,5 +1,5 @@
 [package]
-name = "wave-rs"
+name = "wave_rs"
 version = "0.1.0"
 authors = ["Samuel Resendez <saresend@usc.edu>"]
 
